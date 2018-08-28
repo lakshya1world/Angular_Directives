@@ -4,7 +4,7 @@ import { Directive, Input, TemplateRef, ViewContainerRef } from '@angular/core';
   selector: '[appUnless]'
 })
 export class UnlessDirective {
-
+// Created a structural directive as with the same name as selector
   @Input() set appUnless(condition: boolean){
       if(!condition)
       {

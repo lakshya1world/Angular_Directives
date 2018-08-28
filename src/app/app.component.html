@@ -47,6 +47,14 @@
       </ul>
       <p appBasicHighlight>This is Basic Highlight Directive!</p>
       <p [appBetterHighlight] ="'green'" [defaultColor]="'yellow'">This is Better Highlight Directive!</p>
+      
+      <!-- Use of ngSwitch structural directive -->
+      <div [ngSwitch]="value">
+        <p *ngSwitchCase="5">This is 5</p>
+        <p *ngSwitchCase="10">This is 10</p>
+        <p *ngSwitchCase="100">This is 100</p>
+        <p *ngSwitchDefault>This is default value</p>
+      </div>
     </div>
   </div>
 </div>
